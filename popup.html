@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP Vertical Auto-Switch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header class="popup-header">
+            <h1>縦書き自動切り替え</h1>
+            <div class="status-indicator">
+                <span class="status-dot active"></span>
+                <span class="status-text">有効</span>
+            </div>
+        </header>
+        
+        <main class="popup-content">
+            <div class="info-section">
+                <p>この拡張機能は、文字が行幅を埋めている場合に自動的に縦書きフォントに切り替えます。</p>
+            </div>
+            
+            <div class="controls-section">
+                <label class="toggle-label">
+                    <input type="checkbox" id="enableToggle" checked>
+                    <span class="toggle-slider"></span>
+                    自動切り替えを有効にする
+                </label>
+            </div>
+            
+            <div class="stats-section">
+                <h3>統計情報</h3>
+                <div class="stat-item">
+                    <span class="stat-label">監視中の要素:</span>
+                    <span class="stat-value" id="elementCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">縦書きに変更された要素:</span>
+                    <span class="stat-value" id="changedCount">0</span>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="popup-footer">
+            <button id="refreshBtn" class="btn btn-secondary">統計を更新</button>
+            <button id="resetBtn" class="btn btn-primary">リセット</button>
+        </footer>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 

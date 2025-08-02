@@ -1,0 +1,31 @@
+{
+  "name": "jp-vertical-auto-switch",
+  "version": "0.1.0",
+  "description": "日本語の縦書き自動切り替えブラウザ拡張機能",
+  "main": "background.js",
+  "scripts": {
+    "build": "echo 'Build completed'",
+    "dev": "echo 'Development mode'",
+    "package": "echo 'Package extension'"
+  },
+  "keywords": [
+    "browser-extension",
+    "japanese",
+    "vertical-text",
+    "typography",
+    "chrome-extension",
+    "firefox-extension"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/jp-vertical-auto-switch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/jp-vertical-auto-switch/issues"
+  },
+  "homepage": "https://github.com/yourusername/jp-vertical-auto-switch#readme",
+  "devDependencies": {},
+  "dependencies": {}
+} 
